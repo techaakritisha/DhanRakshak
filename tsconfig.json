@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "target": "ES2020", // Target JavaScript version
+      "module": "ESNext", // Use ES modules
+      "lib": ["DOM", "DOM.Iterable", "ESNext"], // Include libraries
+      "allowJs": true, // Allow JavaScript files
+      "skipLibCheck": true, // Skip type checking of declaration files
+      "esModuleInterop": true, // Enable ES module interop
+      "allowSyntheticDefaultImports": true, // Allow synthetic default imports
+      "strict": true, // Enable all strict type-checking options
+      "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
+      "moduleResolution": "node", // Use Node.js-style module resolution
+      "resolveJsonModule": true, // Allow importing JSON files
+      "isolatedModules": true, // Ensure each file can be transpiled independently
+      "noEmit": true, // Do not emit JavaScript files (Vite handles this)
+      "jsx": "react-jsx", // Use React's JSX runtime
+      
+      "baseUrl": ".", 
+      "paths": {
+        "@/*": ["./src/*"] // Map @/ to the src/ directory
+      }
+    },
+    "include": ["src"], // Include files in the src directory
+    "exclude": ["node_modules"] // Exclude node_modules
+  }
